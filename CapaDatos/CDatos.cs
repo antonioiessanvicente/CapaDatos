@@ -106,11 +106,11 @@ namespace AccesoDatos
  
         #region "Acciones"
         protected abstract IDbConnection CrearConexion(string cadena);
-        protected abstract IDbCommand Comando(string procedimientoAlmacenado);
+        //protected abstract IDbCommand Comando(string procedimientoAlmacenado);
         protected abstract IDbCommand ComandoSql(string comandoSql);
-        protected abstract IDataAdapter CrearDataAdapter(string procedimientoAlmacenado, params Object[] args);
+        //protected abstract IDataAdapter CrearDataAdapter(string procedimientoAlmacenado, params Object[] args);
         protected abstract IDataAdapter CrearDataAdapterSql(string comandoSql);
-        protected abstract void CargarParametros(IDbCommand comando, Object[] args);
+        //protected abstract void CargarParametros(IDbCommand comando, Object[] args);
  
         // metodo sobrecargado para autenticarse contra el motor de BBDD
         public bool Autentificar()
